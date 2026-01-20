@@ -1,0 +1,4 @@
+# Profile Configuration
+
+# Email address for this profile's newsletter
+EMAIL_TO=toffie.menzel@gmail.com

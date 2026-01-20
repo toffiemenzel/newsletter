@@ -1,0 +1,18 @@
+# Environment variables (contains secrets)
+.env
+
+# Temporary files from fetch scripts
+tmp_*.txt
+
+# User profiles - uncomment to ignore personal profiles
+# profiles/*/
+# !profiles/_example/
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+*.swp

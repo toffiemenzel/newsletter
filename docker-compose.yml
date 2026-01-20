@@ -1,0 +1,9 @@
+services:
+  newsletter:
+    build: .
+    stdin_open: true  # Keep STDIN open
+    tty: true         # Allocate pseudo-TTY
+    restart: unless-stopped
+    volumes:
+      - .:/app
+    # No access to host system outside of /app

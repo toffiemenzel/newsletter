@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(profiles/**)",
+      "Read(commands/**)",
+      "Read(template.html)",
+      "Read(CLAUDE.md)",
+      "Write(profiles/**)",
+      "Bash(python3 scripts/send-email.py:*)",
+      "WebSearch",
+      "WebFetch",
+      "WebFetch(domain:www.zeit.de)"
+    ]
+  }
+}
