@@ -6,6 +6,9 @@
 
 set -e
 
+# Ensure PATH includes common locations for npm global binaries
+export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 DATE_YYMMDD=$(date +%y%m%d)

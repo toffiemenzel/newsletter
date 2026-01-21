@@ -1,0 +1,3 @@
+2026-01-21 06:00:01 - Starting newsletter generation for toffie
+scripts/run-newsletter.sh: line 40: claude: command not found
+2026-01-21 06:00:01 - Newsletter generation completed for toffie

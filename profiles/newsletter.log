@@ -1,0 +1,7 @@
+=== Newsletter Generation - 2026-01-21 ===
+Profiles found: toffie
+
+=== Processing: toffie ===
+scripts/run-newsletter.sh: line 40: claude: command not found
+
+=== All newsletters created ===

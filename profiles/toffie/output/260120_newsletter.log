@@ -1,1 +1,29 @@
 2026-01-20 17:19:36 - Starting newsletter generation for toffie
+2026-01-20 16:33:16 - Starting newsletter generation for toffie
+--dangerously-skip-permissions cannot be used with root/sudo privileges for security reasons
+2026-01-20 16:44:49 - Starting newsletter generation for toffie
+Der Newsletter wurde erstellt und gespeichert unter `profiles/toffie/output/260120_newsletter.html`.
+
+**Zusammenfassung:**
+
+**10 Nachrichten:**
+1. Rojava unter Beschuss - das demokratische Projekt in Nordsyrien wird angegriffen
+2. Durchsuchungen bei linksunten.indymedia.org waren rechtswidrig (Landgericht Karlsruhe)
+3. Iran: Totale Kommunikationsblockade gegen Proteste
+4. US-Einwanderungsbehoerde ICE nutzt Palantir-Software fuer Migrantenjagd
+5. Bundesregierung widerruft Aufnahmezusagen fuer Afghanen
+6. DGB warnt vor "vergifteter Debatte" ueber Sozialstaat
+7. EU-Digitalregulierung: "Digitaler Omnibus" bedient Big Tech
+8. Die Linke in Berlin: Wahlprogramm mit 18% in Umfragen
+9. Berlin: Glasfaserkabel zerstoert - S-Bahn lahmgelegt
+10. Berlinale 2026: 276 Filme aus 80 Laendern
+
+**5 Events:**
+1. Veranstaltung zu den Protesten im Iran (heute, 20.01., aquarium)
+2. Queer Poetry Slam (21.01., SO36)
+3. Buchvorstellung "Alles muss man selber machen" - Raetebewegungen (22.01., Schwarze Risse)
+4. Soliparty fuer Kaelteschutz im Mehringhof (23.01., SchreinA)
+5. Legitimaet der Polizei in autoritaeren Zeiten (24.01., Aquarium)
+
+**E-Mail-Versand:** Fehlgeschlagen wegen Permission-Fehler beim Zugriff auf `.env`. Der Newsletter ist aber lokal gespeichert und kann manuell versendet werden.
+2026-01-20 16:49:50 - Newsletter generation completed for toffie
