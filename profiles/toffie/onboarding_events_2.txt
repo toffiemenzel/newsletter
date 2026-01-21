@@ -1,0 +1,52 @@
+# Termine die mich DEFINITIV interessieren
+# Diese Veranstaltungen wuerde ich besuchen
+
+[termine]
+### Alles muss man selber machen – Geschichte der Rätebewegungen
+Zeit: 19:00-21:00 | Ort: FMP1, Franz-Mehring-Platz 1, 10243, Berlin | Preis: umsonst
+Kategorie: Diskussion/Vortrag
+„Alles muss man selber machen“ ist ein Buch über Menschen, die sagen, dass es so nicht weitergehen kann und die beschließen, ihr Schicksal selbst in die Hand zu nehmen.
+URL: https://stressfaktor.squat.net/node/323960
+
+[termine]
+### Bibliothek der Freien - Anarchistische Bibliothek
+Zeit: 18:00 | Ort: Bibliothek der Freien, Greifswalder Str. 4, 10405 Berlin
+Kategorie: Buch-/Infoladen/Bücherei
+Anarchistische Bücher zum Stöbern und Ausleihen // Anarchist books to browse and borrow
+URL: https://stressfaktor.squat.net/node/324294
+
+[termine]
+### Solawi PlantAge -  Gemeinschaftlich Land kaufen
+Zeit: 18:30 | Ort: SOLId, Graefestraße 18, 10967 Berlin
+Kategorie: Essen, Diskussion/Vortrag | Tags: vegetarisch
+Pommes🍟 party 🍟, Free potatoes!... and Pommes Power against Foodwaste!im Rahmen der Kapmagne 4000-tonnen kommt (wenn alles nach Plan läuft) 1 Tonne Kartoffeln in das SOLID und warten diesen Donnerstag
+URL: https://stressfaktor.squat.net/node/324256
+
+[termine]
+### Sunday Lockpicking
+Zeit: 19:00 | Ort: Vetomat, Wühlischstr. 42, 10247 Berlin
+Kategorie: Kurs/Workshop, Arbeitsplatz/Selbermachen
+Schlösser öffnen ohne Schlüssel: ein Gedulds- und Geschicklichkeitsspiel der anderen Art! Es geht um Fingerspitzengefühl und darum, die Sicherheitslücken von mechanischen Schließsystemen zu entdecken ## Mo., 26. Januar 2026
+URL: https://stressfaktor.squat.net/node/324390
+
+[termine]
+### Flinta*only Kickern
+Zeit: 18:00 | Ort: Tristeza, Pannierstr. 5, 12047 Berlin
+Kategorie: Kneipe/Café
+Kickern gegens Patriarchat! Jeden Dienstag gibts den Kickerraum nur für FLINTA. Das heisst nur Frauen, Lesben, Inter, Trans*, Nicht-Binäre und Agender Personen sind im Kickerraum willkommen.
+URL: https://stressfaktor.squat.net/node/320437
+
+[termine]
+### Crypto Party
+Zeit: 18:00 | Ort: Zielona Góra, Grünbergerstr. 73, 10245 Berlin
+Kategorie: Beratung/Hilfe/Sprechstunde
+Die Veranstaltung ist für alle offen, die sich zum Thema Computer, Datenschutz, Verschlüsselung, Betriebssystemwechsel ... austauschen möchten, Hardwareprobleme haben oder in diesen Bereichen Hilfe br
+URL: https://stressfaktor.squat.net/node/323456
+
+[termine]
+### Flinta*only Kickern
+Zeit: 20:00 | Ort: Tristeza, Pannierstr. 5, 12047 Berlin
+Kategorie: Kneipe/Café
+Kickern gegens Patriarchat! Jeden Dienstag gibts den Kickerraum nur für FLINTA. Das heisst nur Frauen, Lesben, Inter, Trans*, Nicht-Binäre und Agender Personen sind im Kickerraum willkommen. ## Mi., 28. Januar 2026
+URL: https://stressfaktor.squat.net/node/321792
+
