@@ -97,7 +97,7 @@ def send_email(html_content: str, env: dict, profile_config: dict) -> bool:
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
-    msg["From"] = email_from
+    msg["From"] = f"Tagesprophet <{email_from}>"
     msg["To"] = email_to
 
     plain_text = html_to_plain_text(html_content)
