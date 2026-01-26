@@ -1,7 +1,9 @@
 #!/bin/bash
 #
-# Newsletter Generator - Multi-Profile
-# Iterates over all profiles and creates newsletters
+# Newsletter Generator - Multi-Profile (Two-Step Process)
+# 1. Fetch all sources (parallel)
+# 2. Filter sources (Claude instance 1)
+# 3. Create newsletter (Claude instance 2)
 #
 
 set -e
@@ -31,6 +33,18 @@ echo "=== Newsletter Generation - $DATE_LOG ==="
 echo "Profiles found: $PROFILES"
 echo ""
 
+# Step 1: Fetch all sources (parallel)
+echo "=== Step 1: Fetching sources (parallel) ==="
+bash scripts/fetch-taz.sh &
+bash scripts/fetch-berliner-zeitung.sh &
+bash scripts/fetch-nd-aktuell.sh &
+bash scripts/fetch-netzpolitik.sh &
+bash scripts/fetch-stressfaktor.sh &
+bash scripts/fetch-siegessaeule.sh &
+wait
+echo "=== Fetching complete ==="
+echo ""
+
 for PROFILE in $PROFILES; do
     echo "=== Processing: $PROFILE ==="
 
@@ -39,10 +53,24 @@ for PROFILE in $PROFILES; do
     LOG_FILE="profiles/$PROFILE/output/${DATE_YYMMDD}_newsletter.log"
     echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting newsletter generation for $PROFILE" >> "$LOG_FILE"
 
-    PROMPT=$(cat commands/create-newsletter.md | sed "s/{{PROFILE_NAME}}/$PROFILE/g" | sed "s/{{DATE}}/$DATE_YYMMDD/g")
-    claude --dangerously-skip-permissions -p "$PROMPT" 2>&1 | tee -a "$LOG_FILE"
+    # Step 2: Filter sources (Claude instance 1)
+    echo "--- Step 2: Filtering sources ---"
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting filter step" >> "$LOG_FILE"
+    FILTER_PROMPT=$(cat commands/filter-sources.md | sed "s/{{PROFILE_NAME}}/$PROFILE/g")
+    claude --dangerously-skip-permissions -p "$FILTER_PROMPT" 2>&1 | tee -a "$LOG_FILE"
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - Filter step completed" >> "$LOG_FILE"
 
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - Newsletter generation completed for $PROFILE" >> "$LOG_FILE"
+    # Step 3: Create newsletter (Claude instance 2)
+    echo "--- Step 3: Creating newsletter ---"
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting newsletter creation" >> "$LOG_FILE"
+    CREATE_PROMPT=$(cat commands/create-newsletter.md | sed "s/{{PROFILE_NAME}}/$PROFILE/g" | sed "s/{{DATE}}/$DATE_YYMMDD/g")
+    claude --dangerously-skip-permissions -p "$CREATE_PROMPT" 2>&1 | tee -a "$LOG_FILE"
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - Newsletter creation completed" >> "$LOG_FILE"
+
+    # Step 4: Cleanup filtered files
+    echo "--- Step 4: Cleanup ---"
+    rm -f tmp_*_filtered.txt
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - Cleanup completed for $PROFILE" >> "$LOG_FILE"
     echo ""
 done
 
